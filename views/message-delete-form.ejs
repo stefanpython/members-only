@@ -1,0 +1,29 @@
+    <center>
+      <h1 class="mt-5">Delete Message</h1>
+
+      <h2>Are you sure you want to delete the following message?</h2>
+      <h3>Title: <%= message.title %></h3>
+      <p>Message: <%= message.content %></p>
+      <p>Author: <%= message.author.fullName %></p>
+      <p>Date: <%= message.timestamp.toDateString() %></p>
+
+      <form action="/message/<%= message._id %>/delete" method="POST" class="mt-3">
+        <button type="submit" class="btn btn-danger">Delete Message</button>
+        <a href="/" class="btn btn-secondary">Cancel</a>
+      </form>
+
+      <% if (errors && errors.length > 0) { %>
+        <div class="mt-3">
+          <h3>Error:</h3>
+          <ul class="list-unstyled">
+            <% for (let error of errors) { %>
+              <li><%= error.msg %></li>
+            <% } %>
+          </ul>
+        </div>
+      <% } %>
+
+    </center>
+      
+
+

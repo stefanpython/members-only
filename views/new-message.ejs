@@ -1,0 +1,25 @@
+<!-- new-message.ejs -->
+
+<h1 class="mb-4">New Message</h1>
+
+<form action="/new-message" method="post">
+  <% if (errors && errors.length > 0) { %>
+    <ul class="errors alert alert-danger">
+      <% for (let error of errors) { %>
+        <li><%= error.msg %></li>
+      <% } %>
+    </ul>
+  <% } %>
+
+  <div class="form-group">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" value="<%= typeof title !== 'undefined' ? title : '' %>" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label for="content">Content:</label>
+    <textarea id="content" name="content" class="form-control"><%= typeof content !== 'undefined' ? content : '' %></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

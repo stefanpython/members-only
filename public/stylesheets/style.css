@@ -1,0 +1,76 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+a {
+  color: #00b7ff;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.only-span {
+  color: rgb(122, 229, 233);
+}
+
+.member-status {
+  color: gold;
+  font-family: "Fredericka the Great", cursive;
+}
+
+.layout-container {
+  margin-left: 7%;
+}
+
+@media screen and (max-width: 580px) {
+  .layout-container {
+    margin-left: 1px;
+  }
+}
+
+.title {
+  color: #0496cf;
+}
+
+@keyframes pulsate {
+  0% {
+    color: rgb(0, 168, 0);
+  }
+  50% {
+    color: rgb(0, 124, 0);
+  }
+  100% {
+    color: rgb(0, 165, 0);
+  }
+}
+
+.admin-title {
+  animation: pulsate 2s infinite;
+}
+
+.navbar {
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.message-container {
+  height: 700px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
