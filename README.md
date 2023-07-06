@@ -1,6 +1,6 @@
 # Members Only
 
-Members Only is a web application that allows users to join a private club where they can post messages. Only registered users can view the authors and date of each message. The application provides a platform for users to communicate within a trusted community without revealing their identities.
+Members Only is a web application that allows users to join a private club where they can post messages. The application provides a platform for users to communicate within a trusted community.
 
 ## Live demo [Here](https://members-only1.up.railway.app/)
 
